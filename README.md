@@ -21,7 +21,7 @@ This demo demonstrates how you can build your very own **Streamlit Chatbot** tha
 ## Powered By
 
 - **Streamlit**: A Python framework to create interactive web apps for machine learning and data science projects.
-- **OpenAI GPT-4**: To generate responses to user queries using large language models.
+- **OpenAI GPT-4o**: To generate responses to user queries using large language models.
 - **Chroma**: A vector store used to store the document embeddings for quick retrieval.
 - **Langchain**: A framework to simplify the process of combining LLMs and external tools like APIs, databases, and document loaders.
 
@@ -39,9 +39,9 @@ To get started, clone the repository to your local machine using Git:
 git clone https://github.com/yourusername/AWAAI-RAG-Demo.git
 ```
 
-## 2. Set Up the .env File
+### 2. Set Up the .env File
 
-The demo requires an **OpenAI API Key** to interact with the OpenAI models. To set up the API key, follow these steps:
+The demo requires an **OpenAI API Key** to interact with the OpenAI models. To set up the API key, follow the steps mentioned in the **'How to get an OpenAI API key.pdf'** document. Then follow the below steps.
 
 1. Create a new file named `.env` in the **root directory** of the project.
 2. Add the following line to the `.env` file, replacing `your-openai-api-key` with your actual OpenAI API key:
@@ -49,7 +49,7 @@ The demo requires an **OpenAI API Key** to interact with the OpenAI models. To s
 ```txt
 OPENAI_API_KEY="your-openai-api-key"
 ```
-## 3. Install the Required Libraries
+### 3. Install the Required Libraries
 
 This project requires certain libraries to run. You can install them using the requirements.txt file included in the repository.
 
@@ -63,7 +63,7 @@ b) Then, install the required libraries using pip:
 pip install -r requirements.txt
 ```
 
-4. Run the Streamlit App
+### 4. Run the Streamlit App
 Once the dependencies are installed, you can run the Streamlit app with the following command:
 
 ```bash
