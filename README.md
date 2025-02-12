@@ -71,3 +71,40 @@ streamlit run AWAAI_RAG_Demo_StreamlitApp.py
 ```
 
 This command will start the app and you can access it in your web browser at http://localhost:8501.
+
+## Insturction to Deploy on Streamlit Cloud
+
+### Step 1: Fork the Repository on GitHub
+
+1. Go to the GitHub repository.
+2. Click the **Fork** button at the top-right corner of the page.
+3. This creates a copy of the repository in your GitHub account.
+
+### Step 2: Create a Streamlit Cloud Account  
+- Go to **[Streamlit Cloud](https://streamlit.io/cloud)**.  
+- Click **"Sign in with GitHub"**.  
+- Connect your **GitHub account**.  
+
+### Step 3: Deploy on Streamlit Cloud  
+- After logging in, click **"Create app"** from the top right corner.  
+- Under **"Repository"**, select your forked repo.  
+- Choose the correct **branch** (usually `main` or `master`).  
+- Set the **"Main file path"** to your Streamlit script (here 'AWAAI_RAG_Demo_StreamlitApp.py').  
+- Click **"Deploy"**. 
+
+### Step 4: Adding the Secret Key to the Streamlit Cloud App  
+- On your Streamlit Cloud app page, click on the three dots next to your app name.
+- Go to **"Settings"**
+- Click on **"Secrets"**
+- Add your **OpenAI API Key** in this format:
+
+```txt
+OPENAI_API_KEY="your-openai-api-key"
+```
+
+### Step 5: Accessing the Deployed App
+- Once the app is deployed, you can access it at the URL provided by Streamlit Cloud.
+- You can also access it from the Streamlit Cloud dashboard.
+
+### Step 6: Updating the App
+- To update the app, you need to push the changes (that are made locally) to the repository and redeploy the app on Streamlit Cloud.
