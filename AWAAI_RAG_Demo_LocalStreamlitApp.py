@@ -1,3 +1,7 @@
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
 import openai
 import streamlit as st
 from langchain.document_loaders import PyPDFLoader, UnstructuredExcelLoader, CSVLoader, Docx2txtLoader
@@ -7,6 +11,8 @@ from langchain.vectorstores import Chroma
 from dotenv import load_dotenv
 import os
 import tempfile
+import chromadb
+from chromadb.config import Settings
 
 load_dotenv()
 
